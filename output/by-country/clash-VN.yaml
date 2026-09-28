@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇻🇳 VN 01 - xiaohe
   type: vless
-  server: 84.38.183.237
+  server: 160.187.1.101
   port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: c92e12ca-ea66-4785-8675-652b35134117
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ws.nightproducts.ru
+  servername: thus-k.netnode.cc.cd
   network: ws
   ws-opts:
-    path: /vless#/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /t.me/daily_free_vpn
     headers:
-      Host: 84.38.183.237
+      Host: thus-k.netnode.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇻🇳 VN 01 - xiaohe
 rules:
 - MATCH,PROXIES
