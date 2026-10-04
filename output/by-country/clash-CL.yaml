@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - xiaohe
   type: vless
-  server: platform115.golnamakcert.top
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,36 +14,24 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform115
+    path: /platform118
     headers:
-      Host: platform115.halalkhor.info
+      Host: platform118.halalkhor.info
 - name: 🇨🇱 CL 02 - xiaohe
   type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 64.176.15.110
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /platform106
+    path: pyip=bpb.yousef.isegaro.comfp=random
     headers:
-      Host: platform106.halalkhor.info
+      Host: free.cndyw.ggff.net
 - name: 🇨🇱 CL 03 - xiaohe
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇨🇱 CL 04 - xiaohe
   type: vless
   server: platform107.golnamakcert.top
   port: 80
@@ -56,9 +44,9 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.golnamakcert.top
-- name: 🇨🇱 CL 05 - xiaohe
+- name: 🇨🇱 CL 04 - xiaohe
   type: vless
-  server: platform102.golnamakcert.top
+  server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -66,10 +54,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform106
     headers:
-      Host: platform102.halalkhor.info
-- name: 🇨🇱 CL 06 - xiaohe
+      Host: platform106.halalkhor.info
+- name: 🇨🇱 CL 05 - xiaohe
   type: vless
   server: platform107.golnamakcert.top
   port: 80
@@ -82,9 +70,22 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.halalkhor.info
+- name: 🇨🇱 CL 06 - xiaohe
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
 - name: 🇨🇱 CL 07 - xiaohe
   type: vless
-  server: platform109.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -92,12 +93,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform102
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform102.halalkhor.info
 - name: 🇨🇱 CL 08 - xiaohe
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -105,9 +106,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform101
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇨🇱 CL 09 - xiaohe
   type: vless
   server: platform117.golnamakcert.top
@@ -123,7 +124,7 @@ proxies:
       Host: platform117.halalkhor.info
 - name: 🇨🇱 CL 10 - xiaohe
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -131,12 +132,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform115
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform115.halalkhor.info
 - name: 🇨🇱 CL 11 - xiaohe
   type: vless
-  server: platform118.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -144,9 +145,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform109
     headers:
-      Host: platform118.halalkhor.info
+      Host: platform109.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
