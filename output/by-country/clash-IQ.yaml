@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: 188.114.96.3
-  port: 443
-  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 022XW1dMCzG0C6165Pcla6.tOMBORn69.WOrkErS.dev
+  servername: bold-term-4edd.mbigspot.workers.dev
   network: ws
   ws-opts:
-    path: /vl/9QqHUXZVAXGwloTMo5uOQLnnjSncQ?ed=2560
+    path: /
     headers:
-      Host: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+      Host: bold-term-4edd.mbigspot.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
