@@ -30,7 +30,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.225.89
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - xiaohe
   type: vless
   server: 2.26.225.89
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
