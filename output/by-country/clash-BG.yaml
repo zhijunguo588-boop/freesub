@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - xiaohe
+- name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 rules:
 - MATCH,PROXIES
