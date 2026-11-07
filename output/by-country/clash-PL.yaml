@@ -24,32 +24,17 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - xiaohe
   type: vless
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  server: www.speedtest.net
+  port: 80
+  uuid: 7f88d52b-796a-4234-b8cb-71576978c890
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
   network: ws
   ws-opts:
-    path: /static/js/runtime.9d03c7.js
+    path: /?ed=2560
     headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 04 - xiaohe
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
+      Host: ratAn05-srBey720-v2.raTan-05.woRkeRs.deV
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +43,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +51,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
   - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
 rules:
 - MATCH,PROXIES
