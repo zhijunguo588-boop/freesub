@@ -13,43 +13,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 02 - xiaohe
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: www.speedtest.net
-  port: 80
-  uuid: 7f88d52b-796a-4234-b8cb-71576978c890
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ratAn05-srBey720-v2.raTan-05.woRkeRs.deV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
 rules:
 - MATCH,PROXIES
