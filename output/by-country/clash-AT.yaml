@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - xiaohe
-  type: vless
-  server: 193.219.97.198
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
 - name: 🇦🇹 AT 02 - xiaohe
   type: vless
   server: 193.219.97.198
@@ -29,7 +22,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
 - name: 🇦🇹 AT 03 - xiaohe
@@ -46,27 +39,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇦🇹 AT 05 - xiaohe
-  type: vless
-  server: 193.219.97.198
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
-- name: 🇦🇹 AT 06 - xiaohe
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,8 +48,6 @@ proxy-groups:
   - 🇦🇹 AT 02 - xiaohe
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
-  - 🇦🇹 AT 05 - xiaohe
-  - 🇦🇹 AT 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,7 +57,5 @@ proxy-groups:
   - 🇦🇹 AT 02 - xiaohe
   - 🇦🇹 AT 03 - xiaohe
   - 🇦🇹 AT 04 - xiaohe
-  - 🇦🇹 AT 05 - xiaohe
-  - 🇦🇹 AT 06 - xiaohe
 rules:
 - MATCH,PROXIES
