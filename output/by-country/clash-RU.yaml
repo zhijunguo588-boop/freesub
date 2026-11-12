@@ -22,6 +22,20 @@ proxies:
   servername: tfusq-ru-40sb.fade.mom
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
+  server: 188.225.37.43
+  port: 443
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: torvani.cyou
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
   server: 185.178.208.167
   port: 443
   uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
@@ -34,7 +48,7 @@ proxies:
     path: /session
     headers:
       Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -50,6 +64,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +74,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
