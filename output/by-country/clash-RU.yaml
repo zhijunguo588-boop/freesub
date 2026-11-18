@@ -13,18 +13,46 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 172.66.44.211
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 186.243.218.221
+  port: 8443
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wk1.f1w.de5.net
+  servername: cloudehouse24.ru
   network: ws
   ws-opts:
-    path: /
+    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
     headers:
-      Host: wk1.f1w.de5.net
+      Host: cloudehouse24.ru
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 186.243.218.221
+  port: 8443
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloudehouse24.ru
+  network: ws
+  ws-opts:
+    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
+    headers:
+      Host: cloudehouse24.ru
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: 31.177.111.134
+  port: 443
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: k6t8wxun3s.schoolbag.top
+  network: ws
+  ws-opts:
+    path: /static/metrics/86d07ea17ea1/
+    headers:
+      Host: ns4pmajwas.flowersgood.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
