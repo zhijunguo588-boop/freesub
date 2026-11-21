@@ -20,7 +20,7 @@ proxies:
       Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 104.17.145.145
+  server: 198.202.24.142
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: vipfree.dr-ping.ir
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 198.202.24.142
+  server: 172.67.67.89
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
